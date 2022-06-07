@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 62.5%;
+}
+
+body{
+    background: #c6cad5;
+    overflow-x: hidden;
+}
+
+#header{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+}
+
+.left-portion{
+    width: 7%;
+    height: 10rem;
+    background:#f3a90a;
+}
+
+.right-portion{
+    background: #fff;
+    height: 10rem;
+    width: 92%;
+    margin-left: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.right-portion .logo{
+    height: 10rem;
+    width: 12rem;
+    mix-blend-mode: multiply;
+    margin-left: -14%;
+}
+
+.navbar ul li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.7rem;
+    color: black;
+}
+
+.navbar ul li a:hover{
+    color: #f3a90a;
+}
+
+.navbar .btn{
+    background: #f3a90a;
+    color: white;
+    padding: 8px 18px;
+    border: 2px solid #f3a90a;
+    margin-right: 0%;
+}
+
+.navbar .btn:hover{
+    color: #f3a90a;
+    background-color: transparent;
+    animation: pulsete 1s ease-in-out;
+}
+
+@keyframes pulsete{
+    0%
+    {
+        box-shadow: 0 0 25px #f3a90a, 0 0 10px #efd18f;
+    }
+}
+
+#banner{
+    background: url('../images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    margin-top: 10px;
+    z-index: -1;
+}
+
+.content-text{
+    position: absolute;
+    top: 21%;
+    left: 40%;
+    transform: translate(-30%, 50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.content-text h1{
+    font-size: 7rem;
+    color: white;
+    text-align: center;
+}
+
+.content-text p{
+    color: #fff;
+    font-size: 2rem;
+    margin-top: -35px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.content-text .btn{
+    border: 4px solid #f3a90a;
+    padding: 8px 40px;
+    font-size: 2rem;
+    border-radius: 40px;
+    background: transparent;
+    color: #f3a90a;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.content-text .btn:hover{
+    background-color: #fff;
+}
+
+.image{
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    transform: translate(-19%, 20%);
+}
+
+.image img{
+    height: 25rem;
+    width: 32rem;
+    margin: 0 10px;
+    z-index: 1;
+}
